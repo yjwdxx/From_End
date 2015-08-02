@@ -1,0 +1,95 @@
+﻿/*reset */
+body,header,div,footer, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form,button, input, textarea, th, td { margin:0; padding:0; }
+body, button, input, select, textarea {font-family:"microsoft yahei",Simsun,Tahoma;  }
+h1, h2, h3, h4, h5, h6{ font-size:100%; }
+ul, ol { list-style:none; }
+a { text-decoration:none; }
+input, img { border:0; }
+button, input, select, textarea { font-size:100%; }
+table { border-collapse:collapse; border-spacing:0; }
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+.clearfix { *zoom:1; }
+/* 公共样式 */
+.content{width: 90%;margin:0 auto;position: relative;}
+
+/* header */
+header{
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	left: 0;
+	right: 0;
+	background: #333;
+}
+.navBarIcon{
+	position: absolute;
+}
+.navBar{
+	position: absolute;
+	top: 0;
+	right: 0;
+	overflow: hidden;
+	height: 50px;
+	line-height: 50px;
+	z-index: 10000;
+}
+.navBar-list li{
+	float: left;
+	padding: 0 6px;
+	 font-size: 17px;
+	 cursor: pointer;
+	 
+}
+.navBar-list li a{
+	color:#fff;
+}
+.navBar-list li a:hover{
+	color: #ccc;
+}
+/* 内容 */
+.warp{
+	position:absolute;
+	top: 100px;
+	left: 0; 
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+.container{
+	padding:25px;
+	background: #fff;
+	border:1px solid #dfdfdf;
+	border-radius: 5px; 
+	box-shadow: 0 2px 1px rgba(0, 0, 0, 0.08);
+	color: #696262;
+
+}
+.main h3{
+	padding-bottom: 10px;
+	font-size: 20px;
+	border-bottom: 1px solid #dfdfdf;
+	
+}
+.main-menu{
+	height: 40px;
+	width: auto;
+    border-bottom: 1px dashed #eee;
+    display: block;
+    padding-top:15px;
+    overflow: hidden;
+    background-color: green;
+}
+.main-menu dt{
+	font-size: 18px;
+	float: left;
+	background-color:#eee; 
+}
+.main-menu dd{
+	display: inline-block;
+	font-size:  15px;
+	margin-left:20px; 
+	
+}
+.main-list a{
+	background: red;
+}
