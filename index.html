@@ -7,6 +7,25 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<link rel="icon" type="image/x-icon" href="img/icon.png">	
 	<link rel="stylesheet" href="css/main.css">
+	<style type="text/css">
+		@media screen and (max-width: 900px) {
+             .navBar{
+             	display: none;
+             }
+             .main-menu dt{
+             	width: auto;
+             }
+             .main-menu dd{
+               float: left;
+               width: 90%;
+               margin: 15px 0;
+
+             }
+             .main-menu a{
+               margin: 5px;
+             }
+  } 
+	</style>
 </head>
 <body>
 <header>
@@ -15,7 +34,7 @@
 	 <img src="img/mainIcon.png" alt="前端导航网站图标">
     </div>
 	<nav class="navBar">
-		<ul class="navBar-list">
+		<ul class="navBar-list" id="navBarList">
 			<li><a href="#page1">大前端</a></li>
 			<li><a href="#page2">HTML/CSS</a></li>
 			<li><a href="#page3">JavaScript</a></li>
@@ -28,123 +47,385 @@
 </div>
 </header>
 <div class="content">
-    <div class="warp">
+    <div class="warp" id="warp">
 	  <div class="container" id="page1">
 		<div class="main">
 		<h3>大前端</h3>
 			<dl class="main-menu">
 				<dt>社区/组织</dt>
 				<dd class="main-list">
-					<a href="">alibab</a>
-					<a href="">adf </a>
-					<a href="">as d</a>
-					<a href="">asdfsadf</a>
-					<a href="">asdfsadfsdafsadf</a>
-					<a href="">asdf</a>
+				  <a href="http://www.w3cfuns.com/portal.php" target="_blank">W3Cfuns</a>
+				  <a href="http://www.w3ctech.com/" target="_blank">w3ctech</a>
+				  <a href="http://www.w3cplus.com/" target="_blank">w3cplus</a>
+				  <a href="http://www.w3school.com.cn/" target="_blank">w3cSchool</a>
+				  <a href="http://www.qianduan.net/" target="_blank">前端观察</a>
+				  <a href="http://www.daqianduan.com/" target="_blank">大前端</a>
+				  <a href="http://www.daqianduan.com/" target="_blank">大前端</a>
+				  <a href="http://www.html-js.com/" target="_blank">前端乱炖</a>
+				  <a href="http://www.html5dw.com//" target="_blank">HTML5梦工厂</a>
+				  <a href="http://www.w3help.org/zh-cn/kb/" target="_blank">W3Help</a>
+				  <a href="http://blog.jobbole.com/" target="_blank">伯乐在线</a>
+
 				</dd>
 			</dl>
 			<dl class="main-menu">
 				<dt>圈内牛人</dt>
 				<dd class="main-list">
-					<a href=""></a>
-					<a href=""></a>
-					<a href=""></a>
-					<a href=""></a>
-					<a href=""></a>
-					<a href=""></a>
+					<a href="http://www.ruanyifeng.com/blog/" target="_blank">阮一峰</a>
+					<a href="http://www.zhangxinxu.com/wordpress/" target="_blank">张鑫旭</a>
+					<a href="http://www.wufangbo.com/" target="_blank">武方博</a>
+					<a href="http://www.smallni.com/" target="_blank">丁小倪</a>
+					<a href="http://jiongks.name/" target="_blank">勾三股四</a>
+					<a href="http://hikejun.com/blog/" target="_blank">张克军</a>
+					<a href="https://github.com/lifesinger/lifesinger.github.com/issues?q=label%3Ablog" target="_blank">玉伯</a>
+					<a href="http://js8.in/" target="_blank">三水清</a>
+					<a href="http://gaowhen.com/" target="_blank">糖拌西红柿</a>
+					<a href="http://lvwenhan.com/" target="_blank">岁寒</a>
+					<a href="http://www.osmn00.com/" target="_blank">堂主</a>
+					<a href="http://jayli.github.io/blog/" target="_blank">拔赤</a>
+					<a href="http://www.stevesouders.com/blog/" target="_blank">SteveSouders</a>
+					<a href="http://uicss.cn/" target="_blank">崔凯</a>
+					<a href="http://www.nczonline.net/" target="_blank">NicholasZakas</a>
+					<a href="http://javascript.crockford.com/" target="_blank"> DouglasCrockford</a>
+				</dd>
+			</dl>
+			<dl class="main-menu">
+				<dt>百度UED</dt>
+				<dd class="main-list">
+			    <a href="http://fex.baidu.com/" target="_blank">百度FEX</a>
+			    <a href="http://efe.baidu.com/" target="_blank">百度EFE</a>
+			    <a href="http://mweb.baidu.com/" target="_blank">百度MWEB</a>
+			    <a href="http://lamp.baidu.com/" target="_blank">百度LAMP</a>
+			    <a href="http://mux.baidu.com/" target="_blank">百度MUX</a>
+			    <a href="http://ued.baidu.com/#/" target="_blank">百度SearchUX</a>
+				</dd>
+			</dl>
+				<dl class="main-menu">
+				<dt>阿里UED</dt>
+				<dd class="main-list">
+			    <a href="http://ued.tmall.com/" target="_blank">天猫UED</a>
+			    <a href="http://ued.taobao.org/blog/" target="_blank">淘宝UED</a>
+			    <a href="http://www.aliued.cn/" target="_blank">阿里中文UED</a>
+			    <a href="http://www.aliued.com/" target="_blank">阿里国际UED</a>
+			    <a href="http://mux.alimama.com/" target="_blank">阿里妈妈MUX</a>
+			    <a href="https://blog.alipay.com/" target="_blank">支付宝</a>
+				</dd>
+			</dl>	
+			<dl class="main-menu">
+				<dt>腾讯UED</dt>
+				<dd class="main-list">
+			    <a href="http://tgideas.qq.com/" target="_blank">腾讯TGideas</a>
+			    <a href="http://mxd.tencent.com/" target="_blank"腾讯MXD></a>
+			    <a href="http://gdc.qq.com/" target="_blank">腾讯GDC</a>
+			    <a href="http://isux.tencent.com/" target="_blank">腾讯ISUX</a>
+			    <a href="http://cdc.tencent.com/" target="_blank">腾讯CDC</a>
+			         
+				</dd>
+			</dl>	
+			<dl class="main-menu">
+				<dt>搜狐UED</dt>
+				<dd class="main-list">
+			    <a href="http://vc.changyou.com/" target="_blank">搜狐畅游</a>
+			    <a href="http://ued.focus.cn/wordpress/" target="_blank">搜狐焦点UED</a>
+			    <a href="http://ued.sohu.com/" target="_blank">搜狐UED</a>
+				</dd>
+			</dl>
+			<dl class="main-menu">
+				<dt>新浪UED</dt>
+				<dd class="main-list">
+			    <a href="http://ued.sina.com/" target="_blank">新浪UED</a>
+			    <a href="http://udc.weibo.com/" target="_blank">微博UED</a>
+			    <a href="http://ued.leju.com/" target="_blank">新浪UCD</a>			    
+				</dd>
+			</dl>
+			<dl class="main-menu">
+				<dt>其他UED</dt>
+				<dd class="main-list">
+			    <a href="http://uedc.163.com/" target="_blank">网易UEDC</a>
+			    <a href="http://ued.ctrip.com/blog/" target="_blank">携程UED</a>
+			    <a href="http://cued.xunlei.com/" target="_blank">迅雷CUED</a>
+			    <a href="http://uxc.360.cn/" target="_blank">360UXC</a>
+			    <a href="http://www.75team.com/" target="_blank">奇舞团</a>
+			    <a href="http://jdc.jd.com/" target="_blank">京东JDC</a>
+			    <a href="http://jdc.jd.com/" target="_blank">京东JDC</a>
+			
 				</dd>
 			</dl>
 		</div>
 	</div>
-	<div class="container" di="page2">
+	<div class="container" id="page2">
 		<div class="main">
 			<h3>HTML/CSS</h3>
 			<dl class="main-menu">
-				<dt></dt>
+				<dt>HTML</dt>
 				<dd class="main-list">
-					<a href=""></a>
-					<a href=""></a>
+					<a href="http://www.html5cn.com.cn/">HTML5中文学习网</a>
+					<a href="http://www.html5cn.org/">HTML5中国</a>
+					<a href="http://html5.360.cn/">HTML5基地</a>
+				</dd>
+			</dl>
+			<dl class="main-menu">
+				<dt>css框架</dt>
+				<dd class="main-list">
+					<a href="http://necolas.github.io/normalize.css/" target="_blank">normalize.css</a>
+					<a href="http://lessframework.com/" target="_blank">lessframework</a>
+					<a href="http://960.gs/" target="_blank">960gs</a>
+					<a href="http://cssreset.com/" target="_blank">cssreset</a>
+					<a href="http://browserhacks.com/" target="_blank">浏览器hack大全</a>
+					<a href="http://daneden.github.io/animate.css/" target="_blank">animate动画库</a>
+					<a href="http://browserhacks.com/" target="_blank">常用CSS3动画参考</a>
 
 				</dd>
 			</dl>
 			
 		</div>
 	</div>
-		<div class="container" di="page3">
+		<div class="container" id="page3">
 		<div class="main">
 			<h3>JavaScript</h3>
 			<dl class="main-menu">
-				<dt class="main-title"></dt>
+				<dt class="main-title">常见的js库</dt>
 				<dd class="main-list">
-					<a href=""></a>
-					<a href=""></a>
+					<a href="http://jquery.com/" target="_blank">jQuery</a>
+					<a href="http://mootools.net/" target="_blank">mootools</a>
+					<a href="http://dojotoolkit.org/" target="_blank">dojo</a>
+					<a href="http://www.sencha.com/products/extjs/" target="_blank">extjs</a>
+					<a href="http://prototypejs.org/" target="_blank">prototypejs</a>
+					<a href="http://yuilibrary.com/" target="_blank">YUI</a>
+					<a href="http://sizzlejs.com/" target="_blank">sizzlejs</a>
+					<a href="http://facebook.github.io/react/" target="_blank">reactjs</a>
+					<a href="http://zeptojs.com/" target="_blank">zeptojs</a>
 
+				</dd>
+			</dl>
+			<dl class="main-menu">
+				<dt class="main-title">node.js</dt>
+				<dd class="main-list">
+				   <a href="http://www.nodejs.org/ " target="_blank">nodejs官方</a>
+				   <a href="https://cnodejs.org/ " target="_blank">nodejs中文</a>
+				   <a href="http://gruntjs.com/ " target="_blank">gruntjs官方</a>
+				   <a href="http://gruntjs.cn/ " target="_blank">gruntjs中文</a>
+				   <a href="http://gulpjs.com/ " target="_blank">gulpjs官方</a>
+				   <a href="https://github.com/targetkiller/gulp-imageisux" target="_blank">gulpjs插件</a>
+				</dd>
+			</dl>
+			<dl class="main-menu">
+				<dt class="main-title">jquer插件</dt>
+				<dd class="main-list">
+				  <a href="http://jqueryui.com/" target="_blank">jQueryUI</a>
+				  <a href="http://www.htmleaf.com/" target="_blank">jQuery之家</a>
+				  <a href="https://github.com/alvarotrigo/fullPage.js" target="_blank">fullpage.js插件</a>
+				  <a href="http://jqueryvalidation.org/" target="_blank"> validate验证插件</a>
 				</dd>
 			</dl>
 			
 		</div>
 	</div>
-<div class="container" di="page4">
+    <div class="container" id="page4">
 		<div class="main">
 			<h3>响应式/移动端</h3>
 			<dl class="main-menu">
-				<dt class="main-title"></dt>
+				<dt class="main-title">UI/JS框架</dt>
 				<dd class="main-list">
-					<a href=""></a>
-					<a href=""></a>
-
+					<a href="http://jquerymobile.com/" target="_blank">jQueryMobile</a>
+					<a href="http://joapp.com/" target="_blank">Joapp</a>
+					<a href="http://52framework.com/" target="_blank">52framework</a>
+					<a href="http://getfri.es/" target="_blank">Fries</a>
+				</dd>
+			</dl>
+			<dl class="main-menu">
+				<dt class="main-title">响应式开发</dt>
+				<dd class="main-list">
+					<a href="http://www.bootcss.com/" target="_blank">bootstrap</a>
+					<a href="http://getwebplate.com/" target="_blank">getwebplate</a>
+					<a href="http://cardinalcss.com/" target="_blank">cardinal</a>
+					<a href="http://base.gs/" target="_blank">base</a>
 				</dd>
 			</dl>
 			
 		</div>
 	</div>
-	<div class="container" di="page5">
+	<div class="container" id="page5">
 		<div class="main">
 			<h3>前端资料库</h3>
 			<dl class="main-menu">
-				<dt class="main-title"></dt>
+				<dt class="main-title">前端书籍</dt>
 				<dd class="main-list">
-					<a href=""></a>
-					<a href=""></a>
+					<a href="http://www.amazon.cn/gp/product/B007OQQVMY/ref=as_li_qf_sp_asin_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B007OQQVMY&linkCode=as2&tag=whycss-23" target="_blank">JavaScript高级程序设计</a>
+					<a href="http://www.amazon.cn/gp/product/B007VISQ1Y/ref=as_li_qf_sp_asin_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B007VISQ1Y&linkCode=as2&tag=whycss-23" target="_blank">JavaScript权威指南(第6版) </a>
+					<a href="http://www.amazon.cn/gp/product/B004VJM5KE/ref=as_li_qf_sp_asin_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B004VJM5KE&linkCode=as2&tag=whycss-23" target="_blank">javascriptDOM编程艺术</a>
+					<a href="http://www.amazon.cn/gp/product/B00D6MT3LG/ref=as_li_qf_sp_asin_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B00D6MT3LG&linkCode=as2&tag=whycss-23" target="_blank">javascript设计模式</a>
+				    <a href="http://www.amazon.cn/gp/product/B0089TDFNS/ref=as_li_qf_sp_asin_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B0089TDFNS&linkCode=as2&tag=whycss-23" target="_blank">锋利的jQuery</a>
+				    <a href="http://www.amazon.cn/gp/product/B0097CON2S/ref=as_li_qf_sp_asin_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B0097CON2S&linkCode=as2&tag=whycss-23" target="_blank">javascript语言精粹</a>
+				    <a href="http://www.amazon.cn/gp/product/B008XFDQ14/ref=as_li_qf_sp_asin_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B008XFDQ14&linkCode=as2&tag=whycss-23" target="_blank">HTTP权威指南</a>
+				    <a href="http://www.amazon.cn/gp/product/B00GOM5IL4/ref=as_li_qf_sp_asin_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B00GOM5IL4&linkCode=as2&tag=whycss-23" target="_blank">深入浅出Node.js</a>
+				    <a href="http://www.amazon.cn/gp/product/B008UCHA58/ref=as_li_qf_sp_asin_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B008UCHA58&linkCode=as2&tag=whycss-23" target="_blank">精通正则表达式</a>
 
 				</dd>
 			</dl>
-			
+			<dl class="main-menu">
+				<dt class="main-title">技术周刊</dt>
+				<dd class="main-list">
+					<a href="http://www.75team.com/weekly/" target="_blank">奇舞周刊</a>
+					<a href="http://weekly.manong.io/" target="_blank">码农周刊</a>
+					<a href="http://ourjs.com/" target="_blank">OurJs</a>
+					<a href="http://html5weekly.com/" target="_blank">html5weekly</a>
+					<a href="http://javascriptweekly.com/" target="_blank">JavaScript Weekly</a>
+
+				</dd>
+			</dl>
+			<dl class="main-menu">
+				<dt class="main-title">技术问答</dt>
+				<dd class="main-list">
+					<a href="http://stackoverflow.com/" target="_blank">stackoverflow</a>
+					<a href="http://www.quora.com/" target="_blank">quora</a>
+					<a href="http://www.zhihu.com/" target="_blank">知乎</a>
+					<a href="" target="_blank"></a>
+				</dd>
+			</dl>
+			<dl class="main-menu">
+				<dt class="main-title">互联网</dt>
+				<dd class="main-list">
+					<a href="http://36kr.com/" target="_blank">36氪</a>
+					<a href="http://www.geekpark.net/" target="_blank">极客公园</a>
+					<a href="http://www.ifanr.com/" target="_blank">爱范</a>
+					<a href="http://segmentfault.com/" target="_blank">segmentfault</a>
+				</dd>
+			</dl>
 		</div>
 	</div>
-		<div class="container" di="page6">
+		<div class="container" id="page6">
 		<div class="main">
 			<h3>工具箱</h3>
 			<dl class="main-menu">
-				<dt class="main-title"></dt>
-				<dd class="main-list">
-					<a href=""></a>
-					<a href=""></a>
-
-				</dd>
-			</dl>
+					<dt class="main-title">客户端编辑器</dt>
+					<dd class="main-list">
+						<a href="http://www.sublimetext.com/" target="_blank">sublimeText</a>
+						<a href="http://notepad-plus-plus.org/" target="_blank">notepad++</a>
+						<a href="http://www.editplus.com/" target="_blank">EditPlus</a>
+						<a href="http://www.jetbrains.com/idea/" target="_blank">IntelliJIDEA</a>
+						<a href="http://www.adobe.com/cn/products/dreamweaver.html" target="_blank">Dreamweaver</a>
+						<a href="http://www.vim.org/download.php" target="_blank">VIM</a>
+						<a href="http://aptana.com/" target="_blank">Aptana</a>
+					</dd>
+				</dl>
+				<dl class="main-menu">
+					<dt class="main-title">代码在线编辑</dt>
+					<dd class="main-list">
+						<a href="http://jsfiddle.net/" title="" target="_blank">jsfiddle</a>
+						<a href="http://jsbin.com/" title="" target="_blank">jsbin</a>
+						<a href="http://cssdeck.com/" title="" target="_blank">cssdeck</a>
+						<a href="http://codepen.io/" title="" target="_blank">codepen</a>
+						<a href="http://jsdo.it/" title="" target="_blank">jsdoit</a>
+						<a href="http://dabblet.com/" title="" target="_blank">dabblet</a>
+					</dd>
+				</dl>
+				<dl class="main-menu">
+					<dt class="main-title">页面性能测试</dt>
+					<dd class="main-list">
+						<a href="http://www.alibench.com/" target="_blank">阿里测</a>
+						<a href="http://developers.google.com/speed/pagespeed/insights/"target="_blank">PageSpeed</a>
+						<a href="http://www.webpagetest.org/"  target="_blank">WebPageTest</a>
+						<a href="http://gtmetrix.com/"  target="_blank">gtmetrix</a>
+						<a href="http://www.telerik.com/download/fiddler" target="_blank">Fiddler</a>
+						<a href="http://www.httpwatch.com/" target="_blank">httpwatch</a>
+					</dd>
+				</dl>
+				<dl class="main-menu">
+					<dt class="main-title">格式化/压缩</dt>
+					<dd class="main-list">
+						<a href="http://csscomb.com/"target="_blank">csscomb</a>
+						<a href="http://yui.github.io/yuicompressor/"  target="_blank">YUIcompressor</a>
+						<a href="http://tool.css-js.com/"target="_blank">在线CSS/JS压缩</a>
+						<a href="http://closure-compiler.appspot.com/home" target="_blank">ClosureCompiler</a>
+						<a href="http://jsmini.com/"  target="_blank">jsmini</a>
+						<a href="https://tinypng.com/"  target="_blank">tinypng</a>
+						<a href="http://www.smushit.com/ysmush.it/"  target="_blank">smushit</a>
+					</dd>
+				</dl>
+				<dl class="main-menu">
+					<dt class="main-title">CSS3在线生成</dt>
+					<dd class="main-list">
+						<a href="http://www.css3maker.com/"  target="_blank">CSS3maker</a>
+						<a href="http://css3generator.com/"  target="_blank">CSS3generator</a>
+						<a href="http://www.colorzilla.com/gradient-editor/" target="_blank">CSS3渐变生成</a>
+						<a href="http://css-tricks.com/examples/ButtonMaker/" target="_blank">CSS3按钮生成</a>
+						<a href="http://ecd.tencent.com/css3/tools.html" target="_blank">CSS3动画生成-ECD</a>
+					</dd>
+				</dl>
+				<dl class="main-menu">
+					<dt class="main-title">虚拟机</dt>
+					<dd class="main-list">
+						<a href="http://www.my-debugbar.com/wiki/IETester/HomePage"  target="_blank">IEtester</a>
+						<a href="http://windows.microsoft.com/zh-cn/windows7/install-and-use-windows-xp-mode-in-windows-7"  target="_blank">WINXPmode</a>
+						<a href="http://www.vmware.com/cn" target="_blank">vmware</a>
+						<a href="https://www.virtualbox.org/wiki/Downloads" target="_blank">virtualbox</a>
+					</dd>
+				</dl>
+				<dl class="main-menu">
+					<dt class="main-title">数据转换</dt>
+					<dd class="main-list">
+						<a href="http://webcodertools.com/imagetobase64converter"  target="_blank">图片转base64</a>
+						<a href="http://json.parser.online.fr/" target="_blank">在线解析json</a>
+					</dd>
+				</dl>
 			
 		</div>
 	</div>
-<div class="container" di="page7">
+<div class="container" id="page7">
 		<div class="main">
 			<h3>设计交互</h3>
 			<dl class="main-menu">
-				<dt class="main-title"></dt>
-				<dd class="main-list">
-					<a href=""></a>
-					<a href=""></a>
+					<dt class="main-title">综&nbsp;&nbsp;&nbsp;&nbsp;合</dt>
+					<dd class="main-list">
+						<a href="http://dribbble.com/" target="_blank">Dribbble</a>
+						<a href="http://www.zcool.com.cn/"  target="_blank">站酷</a>
+						<a href="http://www.uisdc.com/"  target="_blank">优设</a>
+						<a href="http://www.iconfans.org/"  target="_blank">iconfans</a>
+						<a href="http://www.visionunion.com/"  target="_blank">视觉同盟</a>
+						<a href="http://shijue.me/"  target="_blank">视觉中国</a>
+						<a href="http://68design.net/"  target="_blank">68design</a>
+					</dd>
+				</dl>
+				<dl class="main-menu">
+					<dt class="main-title">社区/组织</dt>
+					<dd class="main-list">
+						<a href="http://www.uxpachina.org/"target="_blank">UPA中国</a>
+						<a href="http://ixdc.org/" target="_blank">IXDC</a>
+					</dd>
+				</dl>
+				<dl class="main-menu">
+					<dt class="main-title">图&nbsp;&nbsp;&nbsp;&nbsp;标</dt>
+					<dd class="main-list">
+						<a href="https://www.iconfinder.com/"  target="_blank">iconfinder</a>
+						<a href="http://findicons.com/"  target="_blank">findicons</a>
+						<a href="http://www.iconfont.cn/" target="_blank">icon font</a>
+					</dd>
+				</dl>
+				<dl class="main-menu">
+					<dt class="main-title">字&nbsp;&nbsp;&nbsp;&nbsp;体</dt>
+					<dd class="main-list">
+						<a href="https://www.google.com/fonts"  target="_blank">Google Fonts</a>
+						<a href="http://font.chinaz.com/"  target="_blank">Chinaz Font</a>
+						<a href="http://font.knowsky.com/"target="_blank">Knowsky Font</a>
 
-				</dd>
-			</dl>
+					</dd>
+				</dl>
 			
 		</div>
 		</div>
+<footer>
+ <div class="footerContent">
+  <div class="footInner">
+ 	  <p>Copyright by wyy&copy;2015-2016 FromEnd前端导航网站</p>
+ 	  <p>陕ICP备15007432号</p>
+  </div>
+ </div>
+</footer>
     </div>
 </div>
-
-<footer>
-	
-</footer>
+<div id="goTop">
+</div>
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
